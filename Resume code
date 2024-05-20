@@ -1,0 +1,290 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Fara Fatima } \\ \vspace{1pt}
+   % Illinios \vspace{-13pt}, United States \\ \vspace{1pt}
+    \small \href{ }{\raisebox{-0.2\height}\\ \underline{Illinios, United States}}\href{tel:#}{ \raisebox{-0.1\height}\faPhone\ \underline{+1 (872) 800-1344} ~} \href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{fara.fatima445@gmail.com}} ~ 
+    \href{https://linkedin.com/in/farafatima}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{Linkedin}}  ~
+    \href{https://github.com/farafatima44}{\raisebox{-0.2\height}\faGithub\ \underline{Github}} ~
+   % \href{https://github.com/aman-spp}{\raisebox{-0.2\height}\faGithub\ \underline{Illinios, United States}}
+    
+    %\href{https://leetcode.com/aman_2_0_2_3/}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{leetcode.png}}\ \underline{LeetCode}} ~
+   % \vspace{-8pt}
+   % \href{https://auth.geeksforgeeks.org/user/aman_2_0_2_3/practice}{\raisebox{-0.2\height}{\includegraphics[height=0.3cm, width=0.3cm]{gfg.png}}\ \underline{GeeksforGeeks}} ~
+\end{center}
+ %\vspace{0.5mm}
+
+ \vspace{-10pt}
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Campbellsville University}{2023 – 2025}
+      {M.S - Computer Sciences - \textbf{GPA} - \textbf{3.8/4.0}}
+      {Louisville, Kentucky}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Osmania University}{2018 – 2022}
+      {B.E - Information Technology - \textbf{GPA} - \textbf{7.9/10}}{Hyderabad, India}
+  \resumeSubHeadingListEnd
+  
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {College Name}{MM YYYY -- MM YYYY}
+%       {Exam Name - Course Name  - \textbf{Percentage} - \textbf{xx\%}}{city, country}
+%   \resumeSubHeadingListEnd
+
+\section{EXPERIENCE}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\href{}{\textbf{\large{\underline{ Concordia University Chicago}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Computer Support Specialist}}}{Sep 2023 - Jan 2024}\\
+          \resumeItemListStart
+            \resumeItem {\normalsize {Diagnosed and resolved issues related to VPN access, password reset, locked/suspended accounts, prints and wireless network issues.  }}
+           \resumeItem{\normalsize{Resolved over 200 ticket, assisting university employees and students with an average resolution time of 45mins.}}
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Pantech E Learning}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Summer Internship Project}}}{Oct 2021 - Nov 2021}\\
+          \resumeItemListStart
+            \resumeItem{\normalsize{A summer internship project focusing on utilizing energy data from smart meters in homes to identify significant activities and behavioral changes of residents.}}
+            \resumeItem{\normalsize{Employed k-means, SVM, and regression algorithms to analyze disaggregated power consumption readings and predict activity patterns. Domain: Machine Learning, Language: Python. }}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{ Private Tutor }}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{ Remote}}}{Feb 2020 - Dec 2020}\\ 
+          \resumeItemListStart
+            % \resumeItem{\normalsize{We fetch(relevant) data from GitHub for that we required GitHub API and performing various operation on it.}}
+            \resumeItem {\normalsize{Taught programming languages to multiple school age children}}
+            \resumeItem{\normalsize{Creatively explained basics of computer science}}
+          \resumeItemListEnd 
+\vspace{-10pt}
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+          {\href{https://github.com/aman-spp/Scaler-task/tree/main/Scaler-Task-main}{\textbf{\large{\underline{Deep Neural Framework for Continuous Sign Language Recognition}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{B.E Major Project.}}}{2022}\\
+          \resumeItemListStart
+           \vspace{5pt}
+            \resumeItem {\normalsize {Major project in the final year, developing a deep neural framework for continuous sign language recognition, specifically targeting American Sign Language. Designed to facilitate communication for deaf and dumb individuals by converting gestures into letters, words, and speech format.}}
+           \resumeItem{\normalsize{Implemented CNN and HSV algorithms for sign language recognition. Utilized Python programming language in the domain of deep learning.}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\href{}{\textbf{\large{\underline{Human Activity Prediction Pattern System for Smart Homes}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Summer Internship Project}}}{2021}\\
+          \resumeItemListStart
+          \vspace{5pt}
+            \resumeItem{\normalsize{A summer internship project focusing on utilizing energy data from smart meters in homes to identify significant activities and behavioral changes of residents.}}
+  
+            \resumeItem{\normalsize{Employed k-means, SVM, and regression algorithms to analyze disaggregated power consumption readings and predict activity patterns. Domain: Machine Learning, Language: Python. }}
+            
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\href{https://github.com/aman-spp/N-Queens-Puzzle}{\textbf{\large{\underline{ Online Covid19 Vaccine Appointment }}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Web Application}}}{2020}\\
+          \resumeItemListStart
+            % \resumeItem{\normalsize{We fetch(relevant) data from GitHub for that we required GitHub API and performing various operation on it.}}
+            \vspace{5pt}
+            \resumeItem {\normalsize{ Designed and developed a web application to facilitate online booking of COVID-19 vaccination slots. Integrated information on vaccines from different companies, allowing users to select their location, preferred time slot, vaccine type, and vaccination center.}}
+            \resumeItem{\normalsize{ Technologies Used: Python, Django framework, HTML, CSS, 
+JavaScript, Jquery, SQL.}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+        {\href{https://github.com/FusionIIIT/Fusion/tree/main/FusionIIIT/applications/counselling_cell}{\textbf{\large{\underline{Covid19 Tracker \textbf{-Responsive Website}}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{HTML, CSS, XML, Javascript, Jquery}}}{2021-22}\\
+          \resumeItemListStart
+          \vspace{5pt}
+             \resumeItem{\normalsize{Developed a website to track COVID-19 cases at state, city, and country levels. Implemented features to detect rising case numbers in specific areas and provided essential information on Covid-19, including causes, symptoms, precautions, and safety measures.}}
+            
+          \resumeItemListEnd
+          \vspace{-8pt}
+      
+%------RELEVANT COURSEWORK-------
+\section{TECHNICAL SKILLS}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item Programming Languages: C, C++, Java with Oops concepts, Python, DSA
+                \item Operating Systems: Unix, Linux, Windows, Ubuntu
+                \item Web Technologies: HTML, CSS, XML, Javascript, Jquery
+                \item Database Management: MySQL, Oracle, SQL
+                \item Development Tools: VS code, Eclipse, Pycharm, IntelliJ
+                \item Frameworks: HTML5, Django, MangoDB 
+                 
+            
+            \end{itemize}
+        \end{multicols}
+        
+          \vspace*{2.0\multicolsep}
+        
+    %\resumeSubHeadingListEnd
+
+\vspace{-13}
+
+
+%
+%-----------EXPERIENCE-----------
+% \section{INTERNSHIP}
+%   \resumeSubHeadingListStart
+
+%     \resumeSubheading
+%       {Company Name \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{MM YYYY -- MM YYYY} 
+%       {\underline{Role Name}}{city, country}
+%       \resumeItemListStart
+%         \resumeItem{\normalsize{About the role \textbf{and responsibilities carried out.}}}
+  
+%       \resumeItemListEnd  
+%   \resumeSubHeadingListEnd
+% \vspace{-300pt}
+ \end{document}
